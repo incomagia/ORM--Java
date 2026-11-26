@@ -10,6 +10,11 @@
 - Maven 3.9+
 - PostgreSQL (локально) или Docker (для тестов Testcontainers)
 
+## Стек
+- Spring Boot 3, Spring Data JPA, Hibernate
+- PostgreSQL, Testcontainers
+
+
 ##  Старт
 1. Настройте переменные окружения или редактируйте `src/main/resources/application.yml`:
    - `SPRING_DATASOURCE_URL` (по умолчанию `jdbc:postgresql://localhost:5432/lms`)
@@ -32,10 +37,6 @@ mvn spring-boot:run
 ```bash
 mvn -Dtest=*Test test
 ```
-
-## Стек
-- Spring Boot 3, Spring Data JPA, Hibernate
-- PostgreSQL, Testcontainers
 
 ## Аутентификация + роли
 - Включён Spring Security (HTTP Basic) с тестовыми пользователями (in-memory):
