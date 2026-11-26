@@ -1,13 +1,16 @@
-# LMS (Spring Boot + JPA + PostgreSQL)
+# ORM-фреймворки для Java (Spring Boot / JPA / PostgreSQL)
 
-Учебная платформа с курсами, модулями, уроками, заданиями и тестами.
+Платформа с:
+- курсами
+- модулями 
+- уроками 
+- заданиямитестами
 
-## Требования
 - JDK 17+
 - Maven 3.9+
 - PostgreSQL (локально) или Docker (для тестов Testcontainers)
 
-## Быстрый старт
+##  Старт
 1. Настройте переменные окружения или редактируйте `src/main/resources/application.yml`:
    - `SPRING_DATASOURCE_URL` (по умолчанию `jdbc:postgresql://localhost:5432/lms`)
    - `SPRING_DATASOURCE_USERNAME` (по умолчанию `postgres`)
@@ -34,7 +37,7 @@ mvn -Dtest=*Test test
 - Spring Boot 3, Spring Data JPA, Hibernate
 - PostgreSQL, Testcontainers
 
-## Аутентификация и роли
+## Аутентификация + роли
 - Включён Spring Security (HTTP Basic) с тестовыми пользователями (in-memory):
   - admin/admin (ROLE_ADMIN)
   - teacher/teacher (ROLE_TEACHER)
